@@ -1,0 +1,23 @@
+# WordPress core (fetched via WP-CLI; not project source)
+/wp-admin/
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/xmlrpc.php
+wp-*.php
+wp-config.php
+
+# wp-content: ignore everything except our custom theme
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/martin-aerospace/
+
+# Local runtime tooling (not source)
+/tools/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
