@@ -206,7 +206,7 @@ p { margin: 0 0 16px; }
   padding: 96px 0 72px;
 }
 .hero__content { max-width: 680px; }
-.hero h1 { font-size: 44px; margin-bottom: 20px; }
+.hero h1 { font-size: 44px; margin-bottom: 20px; color: var(--color-white); }
 .hero__actions { display: flex; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
 .hero__stats {
   display: grid;
@@ -328,6 +328,7 @@ p { margin: 0 0 16px; }
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
+  color: var(--color-black);
 }
 
 /* ---------- Process steps ---------- */

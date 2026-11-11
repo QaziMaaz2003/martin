@@ -39,7 +39,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 
 		<div class="card-grid">
 			<div class="product-card">
-				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-af-img-01.jpg' ); ?>" alt="Aerospace Fittings"></div>
+				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-af-img-01-hd.jpg' ); ?>" alt="Aerospace Fittings"></div>
 				<div class="product-card__body">
 					<h3>Aerospace Fittings</h3>
 					<p>Such a wide variety of aerospace hardware that it can be tough knowing which parts to choose — we help you find exactly the MS, AN &amp; NAS standard components you need.</p>
@@ -47,7 +47,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 				</div>
 			</div>
 			<div class="product-card">
-				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-ac-img-01.jpg' ); ?>" alt="Aerospace Chemicals"></div>
+				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-ac-img-01-hd.jpg' ); ?>" alt="Aerospace Chemicals"></div>
 				<div class="product-card__body">
 					<h3>Aerospace Chemicals</h3>
 					<p>Market leader in supplying aviation chemicals and associated materials to the aerospace and engineering industries, often below usual factory minimums.</p>
@@ -55,7 +55,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 				</div>
 			</div>
 			<div class="product-card">
-				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-aph-img-01.jpg' ); ?>" alt="Aerospace Parts and Hardware"></div>
+				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-aph-img-01-hd.jpg' ); ?>" alt="Aerospace Parts and Hardware"></div>
 				<div class="product-card__body">
 					<h3>Aerospace Parts &amp; Hardware</h3>
 					<p>A leading global distributor of fasteners to the aerospace industry — competitive pricing, part availability, and world-class delivery.</p>
