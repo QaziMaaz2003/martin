@@ -157,14 +157,15 @@ p { margin: 0 0 16px; }
 }
 .site-logo__text span { color: var(--color-red); }
 
-.primary-nav { display: flex; align-items: center; gap: 28px; }
-.primary-nav ul { display: flex; align-items: center; gap: 24px; list-style: none; }
+.primary-nav { display: flex; align-items: center; gap: 20px; }
+.primary-nav ul { display: flex; align-items: center; gap: 18px; list-style: none; }
 .primary-nav a {
   color: var(--color-white);
   font-family: var(--font-heading);
-  font-size: 14px;
-  letter-spacing: 0.04em;
+  font-size: 13px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .primary-nav a:hover, .primary-nav .current-menu-item > a { color: var(--color-red-light); }
 .primary-nav .menu-item-has-children { position: relative; }
@@ -210,7 +211,7 @@ p { margin: 0 0 16px; }
 .hero__actions { display: flex; gap: 16px; margin-top: 28px; flex-wrap: wrap; }
 .hero__stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 24px;
   margin-top: 56px;
   padding-top: 32px;
@@ -232,7 +233,7 @@ p { margin: 0 0 16px; }
 /* ---------- Product cards ---------- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   margin-top: 40px;
 }
@@ -310,7 +311,7 @@ p { margin: 0 0 16px; }
 /* ---------- Feature / why-us grid ---------- */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
   margin-top: 40px;
 }
@@ -334,7 +335,7 @@ p { margin: 0 0 16px; }
 /* ---------- Process steps ---------- */
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 28px;
   margin-top: 40px;
 }
@@ -359,7 +360,7 @@ p { margin: 0 0 16px; }
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
-.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 24px; }
+.stat-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
 
 /* ---------- Trust-signal band ---------- */
 .trust-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
@@ -401,7 +402,7 @@ table.data-table tr:nth-child(even) td { background: var(--color-offwhite); }
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
   margin-top: 32px;
 }
@@ -424,10 +425,9 @@ table.data-table tr:nth-child(even) td { background: var(--color-offwhite); }
 
 .manufacturer-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 8px 24px;
   margin-top: 24px;
-  column-count: 4;
 }
 .manufacturer-grid li {
   font-size: 14px;
@@ -512,13 +512,15 @@ table.data-table tr:nth-child(even) td { background: var(--color-offwhite); }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
-  .card-grid, .feature-grid, .category-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-grid, .hero__stats, .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .card-grid, .feature-grid, .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .process-grid, .hero__stats, .stat-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .split, .rfq-layout { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-  .manufacturer-grid { column-count: 2; }
+  .manufacturer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
-@media (max-width: 768px) {
+/* Nav collapses to a hamburger well before the tablet range, since the
+   full menu (7 items + CTA) has no room to breathe below ~1200px. */
+@media (max-width: 1200px) {
   .primary-nav { position: fixed; top: 76px; left: 0; right: 0; bottom: 0; background: var(--color-black); flex-direction: column; align-items: flex-start; padding: 24px; display: none; overflow-y: auto; }
   .primary-nav.is-open { display: flex; }
   .primary-nav ul { flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; }
@@ -526,8 +528,16 @@ table.data-table tr:nth-child(even) td { background: var(--color-offwhite); }
   .primary-nav a { padding: 10px 0; display: block; }
   .nav-toggle { display: block; }
   .nav-cta { margin: 16px 0 0; }
+}
+@media (max-width: 768px) {
   .hero h1 { font-size: 30px; }
   .card-grid, .feature-grid, .category-grid, .process-grid, .hero__stats, .stat-row { grid-template-columns: 1fr; }
-  .manufacturer-grid { column-count: 1; }
+  .manufacturer-grid { grid-template-columns: 1fr; }
   .utility-bar .container { justify-content: center; text-align: center; }
+}
+@media (max-width: 400px) {
+  .hero h1 { font-size: 26px; }
+  .section { padding: 48px 0; }
+  .hero { padding: 72px 0 48px; }
+  .hero__actions .btn { flex: 1 1 auto; text-align: center; }
 }
