@@ -48,7 +48,7 @@ $about_id     = martin_seed_page( 'about-us', 'About Us', '' );
 $quality_id   = martin_seed_page( 'quality', 'Quality', '' );
 $engineering_id = martin_seed_page( 'engineering', 'Engineering', '' );
 $careers_id   = martin_seed_page( 'careers', 'Careers', '' );
-$fittings_id  = martin_seed_page( 'fittings', 'Fittings', '' );
+$fittings_id  = martin_seed_page( 'fittings', 'Hydraulic Fittings', '' );
 $chemicals_id = martin_seed_page( 'chemicals', 'Chemicals', '' );
 $fasteners_id = martin_seed_page( 'fasteners-hardware', 'Fasteners & Hardware', '' );
 $rfq_id       = martin_seed_page( 'request-a-quote', 'Request a Quote', '' );
@@ -60,7 +60,7 @@ WP_CLI::log( 'Set static front page to Home.' );
 
 // ---- Site title / tagline ----
 update_option( 'blogname', $contact['company'] );
-update_option( 'blogdescription', 'Aerospace Fittings, Chemicals & Fasteners' );
+update_option( 'blogdescription', 'Hydraulic Fittings, Chemicals & Fasteners' );
 
 // ---- Primary menu ----
 $menu_name = 'Primary Menu';
@@ -105,7 +105,7 @@ martin_add_menu_item( $menu_id, 'Engineering', $engineering_id );
 martin_add_menu_item( $menu_id, 'Careers', $careers_id );
 
 $products_parent = martin_add_menu_item( $menu_id, 'Products', 0, '#' );
-martin_add_menu_item( $menu_id, 'Fittings', $fittings_id, '', $products_parent );
+martin_add_menu_item( $menu_id, 'Hydraulic Fittings', $fittings_id, '', $products_parent );
 martin_add_menu_item( $menu_id, 'Chemicals', $chemicals_id, '', $products_parent );
 martin_add_menu_item( $menu_id, 'Fasteners & Hardware', $fasteners_id, '', $products_parent );
 

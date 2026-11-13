@@ -18,7 +18,7 @@ $contact = $data['contact'];
 
 <section class="section">
 	<div class="container">
-		<p class="lead">Originally founded as Martin Aerospace Corporation, <?php echo esc_html( $contact['company'] ); ?> is a small business manufacturing facility manufacturing precision hydraulic tube fittings for over twenty-four years.</p>
+		<p class="lead">Originally founded as Martin Aerospace Corporation, <?php echo esc_html( $contact['company'] ); ?> is a small business manufacturing facility manufacturing precision hydraulic tube fittings for over twenty years.</p>
 
 		<p>We manufacture hydraulic fittings in accordance with a variety of qualified procurement specifications. These include but are not limited to the MiI-F-5509; The Society of Automotive Engineers' Surface Vehicle Standard, SAE-J514; The Aerospace Industries Association National Aerospace Standards; The NASA Engineering Standards per KSC-F-124; and Mil-F-18866. Our quality control system is certified to MiI-I-45208A. We perform our inspection procedures in accordance with ANS/ASQC Z1.4-1993.</p>
 

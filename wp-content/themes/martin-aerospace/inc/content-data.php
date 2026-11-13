@@ -103,11 +103,11 @@ return array(
 		'Fittings'            => array( 'Swagelok®', 'Flared Fittings', 'Flareless Fittings', 'Beam Seal Fittings' ),
 		'Pin Systems'         => array( 'Hi-Lite® Pins & Collars', 'Hi-Tigue® Pins & Collars', 'Hi-Lok® Pins & Collars', 'Hi-Torque® Bolts', 'Lockbolts & Collars' ),
 		'Inserts and Studs'   => array( 'Solid Inserts and Studs', 'Helical Coil Inserts', 'Key-Locked Inserts and Studs', 'Ring-Locked Inserts and Studs', 'Vespel Self-Locking Inserts', 'Cinch Studs' ),
-		'Pins'                => array( 'Quick Release Pins — Camloc®, Airloc®', 'Spring Pins', 'Roll Pins', 'Clevis Pins', 'Solid Pins', 'Taper Pins', 'Cotter Pins' ),
+		'Pins'                => array( 'Quick Release Pins (Camloc®, Airloc®)', 'Spring Pins', 'Roll Pins', 'Clevis Pins', 'Solid Pins', 'Taper Pins', 'Cotter Pins' ),
 		'Military and Industry Fasteners' => array( 'AN, AS, MS, NAS, MIL, DIN, AGS' ),
 		'Prime Fasteners'     => array( 'BAC, ABS, ASNA, E, EN', 'NSA, ST3M, 3M' ),
 		'Nuts'                => array( 'Barrel Nuts', 'Clinch Nuts', 'Clip Nuts', 'Engine Nuts', 'Gang Channels', 'Hex & Double Hex Nuts', 'Locknuts', 'Nutplates', 'Rivnuts', 'Self-Locking Nuts', 'Taper-Lok Nuts', 'Vespel® Self-Locking Nuts' ),
-		'Rivets'              => array( 'Blind Rivets — CR®, CCR® (NAS1400, NAS1740, NAS1900, NAS1686, NAS1687)', 'Solid Rivets', 'Structural Rivets' ),
+		'Rivets'              => array( 'Blind Rivets: CR®, CCR® (NAS1400, NAS1740, NAS1900, NAS1686, NAS1687)', 'Solid Rivets', 'Structural Rivets' ),
 	),
 
 	'fastener_manufacturers' => array(
@@ -127,12 +127,12 @@ return array(
 	),
 
 	'approved_facilities' => array(
-		'Lockheed-Martin — CCAFS, Vandenberg AFB, Johnson Space Center, Edwards AFB, Dallas-Ft. Worth, Houston, San Diego',
-		'The Boeing Company — Defense & Space Facility Wichita, CCAFS, Stennis Space Center, VAFB',
-		'Honeywell — Hardware Product Group, Engines & Systems, Torrance',
-		'Mississippi Space Services — John C. Stennis Space Center, Mississippi',
+		'Lockheed-Martin: CCAFS, Vandenberg AFB, Johnson Space Center, Edwards AFB, Dallas-Ft. Worth, Houston, San Diego',
+		'The Boeing Company: Defense & Space Facility Wichita, CCAFS, Stennis Space Center, VAFB',
+		'Honeywell: Hardware Product Group, Engines & Systems, Torrance',
+		'Mississippi Space Services: John C. Stennis Space Center, Mississippi',
 		'TRW',
-		'NASA — DFRC, JPL, SSC, JSC',
+		'NASA: DFRC, JPL, SSC, JSC',
 	),
 
 	'specs' => array(
@@ -148,10 +148,10 @@ return array(
 	'contact' => array(
 		'company'    => 'Martin Aerospace',
 		'legal_name' => 'The Martin Company',
-		'address'    => '11301 W. Olympic Blvd, Suite 801, Los Angeles, CA 90064',
+		'address'    => '11150 Tennessee Ave. Unit 1B, Los Angeles, CA 90064',
 		'phone'      => '(310) 231-0055',
 		'fax'        => '(310) 231-3306',
-		'rfq_email'  => 'rfq@themartincompany.org',
+		'rfq_email'  => 'max@themartincompany.org',
 		'careers_email' => 'daniel@themartincompany.org',
 	),
 );

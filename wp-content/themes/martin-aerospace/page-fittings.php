@@ -20,11 +20,11 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 
 <section class="section">
 	<div class="container">
-		<p class="lead"><?php echo esc_html( $contact['company'] ); ?> has such a wide variety of aerospace hardware that it can be tough knowing which parts to choose. This page describes the different product manufacturers that help supply the parts you need for your project. Choose from our large selection of military hardware — from terminals to nuts to handles to fasteners — we provide a large selection of MS, AN, &amp; NAS standard components. <?php echo esc_html( $contact['company'] ); ?> is an industry leader in providing for aerospace and military clientele.</p>
+		<p class="lead">Made to order hydraulic fittings. AS, MS, AN, NAS, or custom fittings, with a print, anything is possible.</p>
+		<p><?php echo esc_html( $contact['company'] ); ?> offers a large selection of military hardware, from terminals and nuts to handles and fasteners, including MS, AN, and NAS standard components. <?php echo esc_html( $contact['company'] ); ?> is an industry leader in providing for aerospace and military clientele.</p>
 
-		<div class="card-grid" style="grid-template-columns: repeat(2, 1fr); margin-bottom: 8px;">
-			<img src="<?php echo esc_url( $img_dir . 'fitttings-filtered-sm-img.jpg' ); ?>" alt="Aerospace fittings">
-			<img src="<?php echo esc_url( $img_dir . 'feetings-filtered-sm-img.jpg' ); ?>" alt="Aerospace fittings detail">
+		<div class="card-grid" style="grid-template-columns: 1fr; margin-bottom: 8px; max-width: 420px;">
+			<img src="<?php echo esc_url( $img_dir . 'product-fittings.jpg' ); ?>" alt="Hydraulic Fittings">
 		</div>
 
 		<h3>Part Number Cross-Reference</h3>

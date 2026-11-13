@@ -20,7 +20,7 @@ $contact = $data['contact'];
 	<div class="container">
 		<div class="job-card">
 			<span class="eyebrow">Open Position</span>
-			<h2>Sales / Purchasing / Customer Service — Aerospace Industry</h2>
+			<h2>Sales / Purchasing / Customer Service, Aerospace Industry</h2>
 			<h4>About the Job</h4>
 			<p>An established leader in the aerospace industry is seeking an ambitious, disciplined, career-minded dynamic person who is looking for a great opportunity in Sales, Purchasing &amp; Customer Service.</p>
 			<ul>

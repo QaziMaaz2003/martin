@@ -37,7 +37,7 @@ function martin_rfq_handle_submission() {
 	$data = martin_content_data();
 	$to   = $data['contact']['rfq_email'];
 
-	$subject = sprintf( '[RFQ] %s — %s', $company ?: $name, wp_trim_words( $parts, 8 ) );
+	$subject = sprintf( '[RFQ] %s: %s', $company ?: $name, wp_trim_words( $parts, 8 ) );
 
 	$body  = "New Request a Quote submission:\n\n";
 	$body .= "Name: {$name}\n";
@@ -53,7 +53,7 @@ function martin_rfq_handle_submission() {
 	$sent = wp_mail( $to, $subject, $body, $headers );
 
 	if ( $sent ) {
-		return array( 'success' => true, 'message' => 'Thank you — your quote request has been sent. We will get back to you shortly.' );
+		return array( 'success' => true, 'message' => 'Thank you. Your quote request has been sent. We will get back to you shortly.' );
 	}
 
 	return array( 'success' => false, 'message' => 'Something went wrong sending your request. Please try again or email us directly at ' . $to . '.' );

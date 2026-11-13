@@ -14,19 +14,23 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 <section class="hero">
 	<div class="container">
 		<div class="hero__content">
-			<span class="eyebrow">Aerospace Fittings · Chemicals · Fasteners</span>
+			<span class="eyebrow">Hydraulic Fittings · Chemicals · Fasteners</span>
 			<h1><?php echo esc_html( $contact['company'] ); ?> is a leading manufacturer &amp; distributor to the aerospace industry.</h1>
-			<p class="lead">Providing quality products and competitive prices for over 19 years — the right product, at the right price, in the right place at the right time.</p>
+			<p class="lead">Providing quality products, competitive lead times, and white-glove service for over 19 years.</p>
 			<div class="hero__actions">
 				<a class="btn btn--primary" href="<?php echo esc_url( home_url( '/request-a-quote/' ) ); ?>">Request a Quote</a>
 				<a class="btn btn--outline" href="#products">View Product Lines</a>
 			</div>
+			<div class="hero__cert">
+				<img src="<?php echo esc_url( $img_dir . 'as9100d-certified.png' ); ?>" alt="AS9100D Certified">
+				<span>AS9100D Certified</span>
+			</div>
 		</div>
 		<div class="hero__stats">
-			<div class="stat"><span class="stat__num">19+</span><span class="stat__label">Years in Business</span></div>
-			<div class="stat"><span class="stat__num">24+</span><span class="stat__label">Years Manufacturing Precision Fittings</span></div>
+			<div class="stat"><span class="stat__num">20+</span><span class="stat__label">Years in Business</span></div>
+			<div class="stat"><span class="stat__num">20+</span><span class="stat__label">Years Manufacturing Precision Fittings</span></div>
 			<div class="stat"><span class="stat__num">5</span><span class="stat__label">Qualified Procurement Specs</span></div>
-			<div class="stat"><span class="stat__num">6</span><span class="stat__label">Approved-Supplier Organizations</span></div>
+			<div class="stat"><span class="stat__num">6</span><span class="stat__label">Approved Supplier Organizations</span></div>
 		</div>
 	</div>
 </section>
@@ -35,19 +39,19 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 	<div class="container">
 		<span class="eyebrow">What We Supply</span>
 		<h2>Three Product Lines, One Trusted Source.</h2>
-		<p class="lead">From precision hydraulic fittings to aviation chemicals and a full range of military-standard fasteners — <?php echo esc_html( $contact['company'] ); ?> keeps aerospace programs supplied and moving.</p>
+		<p class="lead">From precision hydraulic fittings to aviation chemicals and a full range of military-standard fasteners, <?php echo esc_html( $contact['company'] ); ?> keeps aerospace programs supplied and moving.</p>
 
 		<div class="card-grid">
 			<div class="product-card">
-				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-af-img-01-hd.jpg' ); ?>" alt="Aerospace Fittings"></div>
+				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'product-fittings.jpg' ); ?>" alt="Hydraulic Fittings"></div>
 				<div class="product-card__body">
-					<h3>Aerospace Fittings</h3>
-					<p>Such a wide variety of aerospace hardware that it can be tough knowing which parts to choose — we help you find exactly the MS, AN &amp; NAS standard components you need.</p>
+					<h3>Hydraulic Fittings</h3>
+					<p>Made to order hydraulic fittings. AS, MS, AN, NAS, or custom fittings. With a print, anything is possible.</p>
 					<a class="product-card__link" href="<?php echo esc_url( home_url( '/fittings/' ) ); ?>">View Fittings</a>
 				</div>
 			</div>
 			<div class="product-card">
-				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-ac-img-01-hd.jpg' ); ?>" alt="Aerospace Chemicals"></div>
+				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'product-chemicals.jpg' ); ?>" alt="Aerospace Chemicals"></div>
 				<div class="product-card__body">
 					<h3>Aerospace Chemicals</h3>
 					<p>Market leader in supplying aviation chemicals and associated materials to the aerospace and engineering industries, often below usual factory minimums.</p>
@@ -55,10 +59,10 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 				</div>
 			</div>
 			<div class="product-card">
-				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'box-aph-img-01-hd.jpg' ); ?>" alt="Aerospace Parts and Hardware"></div>
+				<div class="product-card__img"><img src="<?php echo esc_url( $img_dir . 'product-fasteners.jpg' ); ?>" alt="Aerospace Parts and Hardware"></div>
 				<div class="product-card__body">
 					<h3>Aerospace Parts &amp; Hardware</h3>
-					<p>A leading global distributor of fasteners to the aerospace industry — competitive pricing, part availability, and world-class delivery.</p>
+					<p>A leading global distributor of fasteners to the aerospace industry, offering competitive pricing, part availability, and world-class delivery.</p>
 					<a class="product-card__link" href="<?php echo esc_url( home_url( '/fasteners-hardware/' ) ); ?>">View Fasteners &amp; Hardware</a>
 				</div>
 			</div>
@@ -69,7 +73,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 <div class="image-band">
 	<img src="<?php echo esc_url( $img_dir . 'fastener-a.jpg' ); ?>" alt="">
 	<div class="container image-band__stat">
-		<span class="stat__num">24+ Years</span>
+		<span class="stat__num">20+ Years</span>
 		<span class="stat__label">Manufacturing Precision Hydraulic Tube Fittings</span>
 	</div>
 </div>
@@ -102,7 +106,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 		<div class="feature-grid">
 			<div class="feature-item"><h4>Certified Quality System</h4><p>Quality control certified to MIL-I-45208A, with inspection per ANSI/ASQC Z1.4-1993.</p></div>
 			<div class="feature-item"><h4>DSCC / ARP Approved</h4><p>Approved supplier under the Defense Logistics Agency's Alternate Release Procedure program.</p></div>
-			<div class="feature-item"><h4>24+ Years Manufacturing</h4><p>Precision hydraulic tube fittings manufactured in-house for over two decades.</p></div>
+			<div class="feature-item"><h4>20+ Years Manufacturing</h4><p>Precision hydraulic tube fittings manufactured in-house for over two decades.</p></div>
 			<div class="feature-item"><h4>Approved by Industry Leaders</h4><p>Trusted supplier to Lockheed-Martin, Boeing, Honeywell, and NASA facilities nationwide.</p></div>
 			<div class="feature-item"><h4>Custom Fitting Engineering</h4><p>In-house engineering to design and manufacture custom or modified fittings to spec.</p></div>
 			<div class="feature-item"><h4>Below-Minimum Chemical Pricing</h4><p>Our distributor status often allows chemicals pricing and quantities below usual factory minimums.</p></div>
@@ -141,7 +145,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 <section class="section section--dark">
 	<div class="container">
 		<span class="eyebrow">Quality</span>
-		<h2>Reliable, Safe Hydraulic Fittings — Every Time.</h2>
+		<h2>Reliable, Safe Hydraulic Fittings. Every Time.</h2>
 		<p class="lead">The successful operation of our quality system relies on the cooperation of personnel at every level, ensuring full customer satisfaction through on-time delivery and the highest quality consistent with cost and specification.</p>
 		<ul class="checklist">
 			<li>Certified quality system</li>
@@ -174,7 +178,7 @@ $img_dir = get_template_directory_uri() . '/assets/images/';
 	<div class="container">
 		<span class="eyebrow" style="color:var(--color-black);">We're Hiring</span>
 		<h2>Join the Martin Aerospace Team.</h2>
-		<p>Sales / Purchasing / Customer Service — Aerospace Industry. Experience in the aerospace industry required.</p>
+		<p>Sales / Purchasing / Customer Service, Aerospace Industry. Experience in the aerospace industry required.</p>
 		<a class="btn btn--outline" href="<?php echo esc_url( home_url( '/careers/' ) ); ?>">View Opening</a>
 	</div>
 </section>

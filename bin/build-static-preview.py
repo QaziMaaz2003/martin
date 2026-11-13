@@ -35,6 +35,8 @@ IMAGES = [
     "fastener-a.jpg", "fastener-b.jpg", "fastener-c.jpg", "fastener-d.jpg", "fastener-e.jpg",
     "feetings-filtered-sm-img.jpg", "feetings-filtered-big-img.jpg",
     "fitttings-filtered-sm-img.jpg", "fitttings1-filtered.jpg",
+    "product-fittings.jpg", "product-chemicals.jpg", "product-fasteners.jpg",
+    "as9100d-certified.png",
 ]
 
 PREVIEW_BANNER = """
